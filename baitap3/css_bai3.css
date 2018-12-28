@@ -1,0 +1,149 @@
+body{
+	background-color: #121214;\
+	margin: 0px;
+	font-family: "Times New Roman",san-serif;
+}
+
+.wrapper{
+	width:1263px;
+	background-image: url(images/bg.jpg);
+	background-repeat: no-repeat;
+	padding-top: 195px;
+	padding-bottom: 64px;
+	margin: 0px auto;
+}
+.nav{
+	margin-bottom: 80px;
+}
+.nav__list{
+	padding: 0px;
+	margin: 0px 0px 0px 69px;
+	display:flex;
+}
+
+.nav__item{
+	list-style-type: none;
+	margin-right: 6px;
+	text-align: center;
+	color:red;
+
+}
+
+.nav__item a{
+	text-decoration: none;
+}
+.nav__menu{
+ 	margin: -3px 0px 0px 0px;
+  	font-size: 20px;
+	line-height: 1;
+	color: #ffffff;
+}
+
+.main{
+	width: 670px;
+	display: flex;
+	padding-bottom: 69px;
+	margin-left: 69px;
+}
+
+.left__part{
+	width: 400px;
+	height: 335px;
+	background-color: #1f1f1f;
+	padding: 43px 23px 0px 21px;
+}
+
+
+.left__part .content{
+	border-top:1px solid #7e7e7e;
+	border-bottom:1px solid #2c2c2c;
+	margin: 0px 0px 28px 0px;
+	padding:28px 0px 67px 11px;
+	font-size: 13px;
+	line-height: 1.38;
+	color: #595959;
+}
+
+.left__list{
+	margin: -4px 0px 0px 20px;
+	padding:0px;
+	list-style-type: none;
+	font-size: 13px;
+	line-height: 1.38;
+	color: #595959;
+	text-decoration:underline;
+}
+
+.left__list li{
+	margin-bottom: 6px;
+}
+
+.link{
+	color: #595959;
+}
+.list__item{
+	position: relative;
+	padding-left: 9px;
+}
+.list__item:before{
+  	position: absolute;
+  	border-left: 4px solid #797782;
+  	border-top: 3px solid transparent;
+  	border-bottom: 3px solid transparent;
+  	height: 0;
+  	width: 0;
+  	margin-top: 4px;
+  	left: 0%;
+	top: 7%;
+ 	content: "";
+}
+
+.right__part{
+	margin-left: 40px;
+	margin-top: 40px;
+}
+
+.content__text{
+	font-size: 11px;
+	line-height: 1.36;
+	color: #595959;
+	margin-top: 5px;
+}
+.right_top{
+	margin-top: 40px;
+}
+.content{
+	margin-top: 20px;
+	margin-left: 15px;
+}
+
+.launch__website{
+	font-size: 12px;
+	background-image: url(images/arr_1.png);
+	background-position: left center;
+	background-repeat: no-repeat;
+	padding-left: 18px;
+	color:white;
+	margin-top: 15px;
+	margin-right: 14px;
+	margin-left: 14px;
+	display: block;
+	text-decoration: none;
+	margin-bottom:40px;
+}
+
+.content--border{
+	border-bottom: 1px dotted  #595959; 	
+	width: 360px;
+}
+.footer{
+	width: 654px;
+	border-top: 1px dotted #212122;
+	color: #595959;
+	font-size: 10px;
+	line-height: 1.5;
+	padding-left: 9px;
+	margin-left: 69px;
+	margin-top: -55px;	
+}
+
