@@ -80,8 +80,8 @@ li:nth-child(2n) .button{
 
 .copyright{
 	position: absolute;
-	top: 13px;
-  right: 27px;
+	top: 3px;
+  	right: 27px;
 	font-size: 10px;
 	letter-spacing: 1px;
 	line-height: 2;
