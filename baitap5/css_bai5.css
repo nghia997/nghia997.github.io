@@ -1,0 +1,95 @@
+.wrapper{
+	width: 1024px;
+	margin: 0px auto;
+	font-size: 0;
+	background-color:#fbf9d5;
+}
+
+.blockproduct1, .blockproduct2{
+	display: flex;
+	width: 100%;
+	flex-wrap: wrap;
+	list-style-type: none;
+	padding: 0px;
+}
+
+.blockproduct1 li, 
+.blockproduct2 li{
+	position: relative;
+	width: 50%;
+	display: block;
+}
+
+.button{
+	position: absolute;	
+	left: 13%;
+	bottom: 7%;
+}
+
+.button__bottom{
+	bottom: 37px;
+}
+
+.button:hover{
+	content: url(images/btn_off.jpg);
+}
+
+li:nth-child(2n) .button{
+	left: 25px;
+}
+
+.backtotop{
+	position: relative;
+	height: 61px;
+}
+
+.backtotop__icon{
+	position: absolute;
+	top: 21px;
+	right: 28px;
+}
+
+.footer{
+	position: relative;
+	height:53px;
+}
+
+.nav{
+	position:absolute;
+	top: 13px;
+	left: 26px;
+	position: absolute;
+	width: 387px;
+	display: flex;
+}
+
+.nav__item{
+  margin-left: 21px;
+}
+
+.footer .nav a{
+	background-image: url(../images/arr.gif);
+	background-repeat: no-repeat;
+	background-position: left center; 
+	padding-left: 11px;
+	font-size: 11px;
+	line-height: 1.81;
+	color: #ffffff;
+	font-family: "Meiryo", sans-serif;
+}
+
+.copyright{
+	position: absolute;
+	top: 13px;
+  right: 27px;
+	font-size: 10px;
+	letter-spacing: 1px;
+	line-height: 2;
+	color: #fff8ef;
+	font-family: "Century", sans-serif;
+	text-align: right;
+}
+
+.link__style{
+	text-decoration: none;
+}

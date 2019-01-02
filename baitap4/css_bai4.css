@@ -1,0 +1,225 @@
+
+body{
+	font-family:  Arial, san-serif;
+}
+
+.wrapper{
+	min-width:316px;
+	width:316px;
+	margin:0 auto;
+	background-color:#e6f3fb;
+	padding-top: 2px;
+	padding-left:11px;
+	padding-right:9px;
+	padding-bottom:17px;
+	-webkit-box-sizing: border-box; 
+	-moz-box-sizing: border-box;    
+	box-sizing: border-box;        
+}
+
+.title{
+	font-weight:bold;
+	margin:0px 0px 0px 1px;
+	font-size: 16px;
+	line-height: 0.9375;
+	color: #000000;
+	font-family: "Times New Roman";	
+	padding-bottom:1px;
+}
+
+.article1{
+	border-top:4px solid #f7a418;
+  padding: 7px 0px 12px 8px;
+	display:flex;
+	background-color:white;    
+}
+
+.article1 .picture{
+	width:156px;
+	height:81px;
+}
+
+.article1 .article__content{
+	width:107px;
+	margin:0px 0px 0px 7px;
+}
+
+.article__title{
+	font-size: 12px;
+	line-height: 15px;
+	color: #0a6395;
+	font-family: "Arial";
+	font-weight: bold;
+	margin-top:2px;
+}
+
+.article__info{
+	font-size: 12px;
+	line-height: 1.25;
+	color: #000000;
+	font-family: "Arial";
+	margin-top: -13px;
+}
+
+.font__style--italic{
+	font-style: italic;
+}
+
+.block_blogroll ul li{
+	margin:0px 0px 1px 0px;
+	font-size: 12px;
+	line-height: 1.25;
+  padding: 7px 0px 12px 10px;
+	background-color:#f9f1c2;
+	-webkit-box-sizing: border-box; 
+	-moz-box-sizing: border-box;  
+	box-sizing: border-box;      
+}
+
+.block_blogroll ul{
+	list-style-type:none;
+	padding:0px;
+	margin:0px;
+}
+.block_blogroll ul .link__style{
+	text-decoration:none;
+	color:#0A6395;
+}
+
+.block_horoscopes{
+	margin-bottom:21px;
+	padding-top: 4px;
+}
+
+.article2{
+	border-top:4px solid #f7a418;
+	padding:20px 0px 22px 14px;
+	display:flex;
+	background-color:white;
+	height :110px;      
+}
+
+.article2 .article__content{
+	width:178px;
+	margin-left:25px;
+}
+
+.article2 .article__content .article__title{
+	font-size: 15px;
+	line-height: 1;
+	color: #000000;
+	margin-top:4px;
+}
+
+.article__date{
+	margin-bottom:5px;
+	font-size: 11px;
+	line-height: 1.36;
+	color: #595959;
+	margin-top:-15px;
+	padding-bottom:12px;
+}
+
+.article2 .article__content .article__info{
+	font-size: 11px;
+	line-height: 1.27;
+	color: #000000;
+}
+
+.article2 .article__content .link__style{
+	color:#0A6395;
+}
+
+.article2 .picture{
+	height:85px;
+}
+
+.credit{
+	height:23px;
+	padding-top:12px;
+	padding-left:23px;
+	background-color:#f4f4e6;
+	font-size: 11px;
+	line-height: 1.27;
+	color: #000000;
+	background-image:url(images/hinh_3.png);
+  	background-repeat:no-repeat;
+	margin-bottom: 0px;
+	margin-top:0px;
+	padding-bottom:12px;
+}
+
+.credit .link__style{
+	font-weight:bold;	
+	color:#0A6395;
+	text-decoration:none;
+}
+.font_weight_bold{
+	font-weight:bold;
+}
+
+.font_color_blue{
+	color:#0A6395;
+}
+
+.article3{
+	border-top:4px solid #f7a418;
+	padding:24px 146px 11px 23px;
+	background-color:white;
+	background-image:url(images/hinh_4.png);
+	background-repeat:no-repeat;
+	background-position:right;
+}
+
+.article3 .article__content{
+	font-size: 12px;
+	line-height: 15px;
+	color: #000000;
+	font-family: "Times New Roman";	
+	margin-top:-2px;
+	margin-bottom:1px;
+}
+
+.article3 .link__style{
+	font-size: 12px;
+	line-height: 1.25;
+	color: #0a6395;
+	font-family: "Times New Roman";	
+	text-decoration:none;
+}
+
+.block_competion{
+	padding-top: 5px;
+	margin-top:8px;	
+	border-top:1px solid #595959;
+}
+
+.title__competions{
+	font-size: 14px;
+	line-height: 1.07;
+	color: #000000;
+	font-family: "Times New Roman";
+ 	font-weight: bold;
+  	margin-top:-1px;
+}
+
+.competion__info{
+	padding:11px 47px 8px 8px;
+	list-style-type:none;
+	margin:0px;
+	background-color:white;
+	border:1px solid #595959;
+	margin-top:-10px;
+}
+
+.competion__info li{
+	font-size: 12px;
+	line-height: 1.25;
+	color: #4d5d73;
+	font-family: "Times New Roman";
+}
+
+.block_competion .competion__info .link__style{
+	color:#4d5d73;
+	text-decoration:none;
+}
