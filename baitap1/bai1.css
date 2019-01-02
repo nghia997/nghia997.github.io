@@ -91,7 +91,7 @@ body{
 	padding-top: 8px;
 	padding-bottom: 5px;
 	background-color: #ECECEC;
-	width: 491px;
+	width: 482px;
 	font-size: 15px;
 	line-height: 1.06;
 	margin-top:0px;
@@ -116,7 +116,7 @@ body{
 	width: 498px;
 	height: 58px;
 	margin-top: 0px;
-	margin-left: 1px;
+	margin-left: -3px;
 	margin-right: 1px;
 	margin-bottom: 4px;
 }
@@ -181,4 +181,9 @@ form{
  	position:relative;
   	right: 19px;
   	font-size: 15px;
+  	margin-top:4px;
+}
+
+.list__item--a{
+	margin-top:-9px;	
 }
