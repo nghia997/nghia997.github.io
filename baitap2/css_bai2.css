@@ -78,6 +78,7 @@ body{
 .content--margin__top10px__left13px{
 	margin-top: 10px;
 	margin-left: 13px;
+
 }
 
 .right__part{
@@ -108,11 +109,9 @@ body{
 
 .more__info--margin__left12px{
 	margin-left: 12px;
+	margin-top: -4px;
 }
 
-.more__info--margin__left12px{
-	margin-left: 12px;
-}
 
 .bottom__block{
 	margin-top: 81px;	
