@@ -44,11 +44,12 @@ body{
 	display: flex;
 	padding-bottom: 69px;
 	margin-left: 69px;
+	margin-top: -14px;
 }
 
 .left__part{
 	width: 400px;
-	height: 335px;
+	height: 315px;
 	background-color: #1f1f1f;
 	padding: 43px 23px 0px 21px;
 }
@@ -133,17 +134,17 @@ body{
 }
 
 .content--border{
-	border-bottom: 1px dotted  #595959; 	
+	border-bottom: 1px dotted  #212122; 	
 	width: 360px;
 }
 .footer{
-	width: 654px;
+	width: 640px;
 	border-top: 1px dotted #212122;
 	color: #595959;
 	font-size: 10px;
 	line-height: 1.5;
 	padding-left: 9px;
 	margin-left: 69px;
-	margin-top: -55px;	
+	margin-top: -50px;	
 }
 

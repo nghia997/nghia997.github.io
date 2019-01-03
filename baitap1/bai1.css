@@ -53,7 +53,7 @@ body{
 	margin-top: 3px;
 	margin-bottom: 0px;
 	width: 385px;
-	height: 110px;
+	height: 102px;
 	font-size: 15px;
 	line-height: 1.06;
 	color: #000000;
@@ -63,7 +63,7 @@ body{
 
 .title__fact{
 	margin-left: 4px;
-	margin-top: 30px;
+	margin-top: 25px;
 	margin-bottom: 27px;
 	font-size: 17px;
 	line-height: 0.58;
@@ -76,6 +76,7 @@ body{
 	list-style-type: none;
 	padding-left: 35px;
 	margin-bottom: 64px;
+	line-height: 1.3;
 }
 
 .list__fact li:before {
@@ -113,7 +114,7 @@ body{
 	position: relative;
 	width: 498px;
 	height: 58px;
-	margin-top: 0px;
+	margin-top: -3px;
 	margin-left: -3px;
 	margin-right: 1px;
 	margin-bottom: 4px;
@@ -139,7 +140,7 @@ body{
 	font-size: 17px;
 	line-height: 0.58;
 	color: #000000;
-	margin-top: 20px;
+	margin-top: 29px;
 	margin-bottom: 11px;
 	margin-left: 193px;
 }
@@ -147,6 +148,7 @@ body{
 form{
 	margin-left: 5px;
 	margin-right: 1px;
+	margin-top: -8px;
 }
 
 .form__label {
@@ -160,7 +162,7 @@ form{
 .form__textarea {
 	min-width: 360px;
 	height: 84px;
-	line-height: 0.6;
+	line-height: 1;
 	resize: none;	
 	margin-bottom:3px;
 }
