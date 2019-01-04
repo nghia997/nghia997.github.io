@@ -59,6 +59,7 @@ body{
 	color: #000000;
 	overflow: scroll;
 	line-height: 1.2;
+	padding-left:10px;
 }
 
 .title__fact{
