@@ -72,7 +72,6 @@ body{
 	line-height: 0.83;
 	color: #595959;
 	margin-top:11px;
-	margin-left:7px;
 }
 
 .content--margin__top10px__left13px{
@@ -200,7 +199,7 @@ body{
 	float: left;
 	width: 237px;
 	background-color: #232227;
-	height:385px;
+	height:370px;
 }
 
 .right__contain{
@@ -208,7 +207,7 @@ body{
 	margin: 0 auto;
 	display: block;
 	width: 190px;
-	margin-top: 73px;
+	margin-top: 70px;
 }
 
 .right__contain img{
