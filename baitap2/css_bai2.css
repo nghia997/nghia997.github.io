@@ -1,7 +1,7 @@
 body{
 	background-color:#121214;
 	font-family: "Times New Roman",san-serif;
-	margin:0px auto;
+	margin:-4px auto;
 }
 
 .wrapper{
@@ -17,13 +17,13 @@ body{
 
 .left__part{
 	padding-left:20px;	
-	padding-top:38px;
+	padding-top:37px;
 	width:422px;
 }
 
 .title__main{
 	margin-top:0px;
-	margin-bottom:38px;
+	margin-bottom:33px;
 	font-size: 12px;
 	line-height: 1.67;
 	color: #595959;
@@ -69,7 +69,7 @@ body{
 .content__article{
 	margin-top: -3px;
 	font-size: 12px;
-	line-height: 0.83;
+	line-height: 0.9;
 	color: #595959;
 	margin-top:11px;
 }
@@ -101,7 +101,7 @@ body{
 	font-size:12px;
 	padding-left:17px;
 	color:#ffffff;
-	margin-top:12px;
+	margin-top:17px;
 	text-decoration:none;
 	display:block;	
 }
