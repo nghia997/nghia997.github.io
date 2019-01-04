@@ -29,9 +29,10 @@ body{
 
 .article1{
 	border-top:4px solid #f7a418;
-  padding: 7px 0px 12px 8px;
+  	padding: 7px 0px 12px 8px;
 	display:flex;
-	background-color:white;    
+	background-color:white;
+	padding-bottom:6px;      
 }
 
 .article1 .picture{
@@ -59,6 +60,13 @@ body{
 	color: #000000;
 	font-family: "Arial";
 	margin-top: -13px;
+}
+.article__info1{
+	font-size: 11px;
+	line-height: 1.31;
+	color: #000000;
+	font-family: "Arial";
+	margin-top: -8px;
 }
 
 .font__style--italic{
@@ -108,7 +116,7 @@ body{
 	font-size: 15px;
 	line-height: 1;
 	color: #000000;
-	margin-top:4px;
+	margin-top:1px;
 }
 
 .article__date{
