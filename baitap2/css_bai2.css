@@ -39,9 +39,10 @@ body{
 }
 
 .top__block:after{
+	margin-top:3px;
 	position:absolute;
 	content:"*100px";
-  top: 98%;
+  	top: 98%;
 	font-size: 12px;
 	line-height: 0.83;
 	color: #595959;
@@ -75,7 +76,7 @@ body{
 }
 
 .content--margin__top10px__left13px{
-	margin-top: 10px;
+	margin-top: 13px;
 	margin-left: 13px;
 
 }
