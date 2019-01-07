@@ -1,0 +1,38 @@
+body {
+  font-family: "Times New Roman", Times, serif;
+}
+.container {
+ margin: 0 auto;
+ background-color: #F8F8F8;
+ width: 500px;
+ position: center;
+ padding: 10px 10px 10px 10px;
+}
+
+.node {
+ height: 60px;
+ background-color: #fff;
+ margin: 10px 100px 10px 20px;
+}
+
+.node p {
+  float: left;
+  text-align: center;
+  margin-left: 20px;
+  margin-top: 20px;	
+}
+.number {
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  border: 4px solid #F8F8F8;
+}
+
+.button {
+  float: right;
+  background-image: url(x.png);
+  margin-top: 15px;
+  margin-right: 20px;
+  width: 33px;
+  height: 33px;
+}
