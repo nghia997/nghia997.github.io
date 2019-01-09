@@ -1,0 +1,92 @@
+form{
+	margin-left:20%;;
+	width:360px;
+	height:auto;
+	padding-top:20px;
+}
+form p{
+	float:left;
+	width:80px;
+	margin-top:-0.2px;
+}
+.clear{
+	float:none;
+	clear:both;
+}
+
+#wappter{
+  width:500px;
+  margin:0 auto;
+  padding-left:11px;
+  padding-right:9px;
+}
+
+
+#table {
+  width: 300;
+  border-collapse: collapse;
+}
+  
+#table, th, td {
+  border: 2px solid black;
+}
+th ,td {
+  width: 25px;
+}
+#value {
+  width: 150px;
+  height: 25px;
+  background-image: url(images/Calendar.png);
+  background-repeat: no-repeat;
+  background-position: right;
+  margin: 0px 0px 15px;
+}
+#head {
+  color: red;
+  background-color: #bebebe;
+}
+#table td {
+  text-align: center;
+
+}
+.notday-js {
+  background-color: black;
+}
+.day-js:hover {
+  background-color: #00ace6;
+}
+#forward__Month-js ,#forward__Year-js ,#back__Month-js ,#back__Year-js {
+  background: no-repeat;
+  background-color: #a9cce3;
+}
+#forward__Month-js {
+  background-image: url("images/nM.png");
+}
+#forward__Year-js {
+  background-image: url("images/nY.png");  
+}
+#back__Month-js {
+  background-image: url("images/rM.png");  
+}
+#back__Year-js {
+  background-image: url("images/rY.png");
+}
+#months , #years {
+  width: 100%;
+  height: 100%
+}
+input{
+  width:150px;
+  height:20px;
+  float:left;
+  margin-right:5px;
+}
+.text-note{
+	margin-left:10px;
+}	
+.inner span{
+	color:#F00;
+	display:block;
+	margin-left: 68%;
+}
+

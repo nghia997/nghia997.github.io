@@ -1,0 +1,36 @@
+<html lang="en">
+    <head>
+        <title>JS 2b</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" type="text/css" href="CSS_bai2B.css">
+    </head>
+    <body>
+        <div>
+        	<div class="inner">
+        		<form>
+        			<p>Username</p>
+                        <input id="user" type="text"></input>
+                        <span class="text-note user"></span>
+                        <div class="clear"></div>                        
+                        <p>Password</p>
+                        <input id="pass" type="text"></input>
+                        <span class="text-note pass"></span>
+                        <div class="clear"></div>                      
+                        <p>Email</p>
+                        <input id="mail" type="text"></input>
+                        <span class="text-note email"></span>
+                        <div class="clear"></div>
+                        <p>Brithday</p>
+                        <input class="txt-date" type="index"  onclick="initCalendar()" id ="value">
+                        <span class="text-note brith"></span>  
+        				<div id="calendar">
+       					</div>
+       					<input id="sub" type="button" value="Submit" onclick="testForm()"> 
+                        <input id="ref" type="reset" value="Refresh" onclick="resetForm()">
+                        <div class="clear"></div>
+        		</form>
+        	</div>
+        </div>
+     <script language="javascript" src="JS_Bai2B.js"></script>
+    </body>
+</html>
