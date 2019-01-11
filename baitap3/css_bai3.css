@@ -4,7 +4,7 @@ body{
 	margin: 0px;		
 }
 
-.wrapper{
+.Surrounded{
 	width:1263px;
 	background-image: url(images/bg.jpg);
 	background-repeat: no-repeat;
@@ -133,7 +133,7 @@ body{
 	margin-bottom:40px;
 }
 
-.content--border{
+.content__border{
 	border-bottom: 1px dotted  #212122; 	
 	width: 360px;
 }
