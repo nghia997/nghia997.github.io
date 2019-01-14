@@ -89,6 +89,7 @@ body{
 	list-style-type:none;
 	padding:0px;
 	margin:0px;
+	background-color: white;
 }
 .block_blogroll ul .link__style{
 	text-decoration:none;
