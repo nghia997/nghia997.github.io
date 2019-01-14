@@ -21,7 +21,7 @@ th ,td {
 #value {
   width: 250px;
   height: 25px;
-  background-image: url(images/calendar.png);
+  background-image: url(../images/calendar.png);
   background-repeat: no-repeat;
   background-position: right;
   margin: 10px 0px 15px;
@@ -45,16 +45,16 @@ th ,td {
   background-color: #a9cce3;
 }
 #forward__Month-js {
-  background-image: url("images/nM.png");
+  background-image: url("../images/nM.png");
 }
 #forward__Year-js {
-  background-image: url("images/nY.png");  
+  background-image: url("../images/nY.png");  
 }
 #back__Month-js {
-  background-image: url("images/rM.png");  
+  background-image: url("../images/rM.png");  
 }
 #back__Year-js {
-  background-image: url("images/rY.png");
+  background-image: url("../images/rY.png");
 }
 #months , #years {
   width: 100%;
