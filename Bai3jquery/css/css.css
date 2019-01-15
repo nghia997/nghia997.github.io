@@ -1,0 +1,11 @@
+.img--right {
+  	right: 0;
+  	position: absolute;
+}
+.container {	
+  	height: 600px; 
+}
+.img--left{
+  	left: 0;
+  	position: absolute;
+}	
