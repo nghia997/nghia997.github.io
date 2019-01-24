@@ -1,92 +1,20 @@
- var userID;
+var userID;
 var pass;
 var email;
 var brDay; 
-
-//test  user
-function testUser(){
-    userID = document.getElementById("user").value;
-    var long = userID.length;
-    if (userID == ""){
-        //user không được để trống
-        return false;
-    }else{
-        for( var i = 0;i<long+1;i++)
-        {
-            if(userID.charCodeAt(i)>57 && userID.charCodeAt(i)<65 || userID.charCodeAt(i)>90 && userID.charCodeAt(i)<97 || userID.charCodeAt(i)>122 || userID.charCodeAt(i)<48 ){
-                return false
-            }
-        }
-        if(long > 30){
-                    //user không quá 30 ký tự
-                    return false;
-                }else{
-                    //user hợp lệ
-                    return true;
-                }
-    }
-    
-}
-function resetForm() {
-        var listSpanNote = document.getElementsByClassName('text-note');
-        for(var i = 0; i < listSpanNote.length; i++) {
-            listSpanNote[i].innerHTML = '';
-        }
-    }
-function testPass(){
-    pass = document.getElementById("pass").value;
-    if (pass == ""){ 
-        return false;
-    }
-    return true;
-} 
-//test brithday
-function testBrDay(){
-    brDay = document.getElementsByClassName("txt-date")[0].value;
-    if (brDay == ""){
-        //Ngày sinh không được để trống
-        return false;
-    }
-    return true;
-}
-//Test input email
-function testEmail(){
-    email = document.getElementById("mail").value;
-    if (email == ""){
-        //Email không được để trống
-        return false;
-    }else{
-        var at = email.indexOf("@");
-         var dot = email.lastIndexOf(".");
-         var space = email.indexOf(" ");
-         
-         if ((at != -1) && //có ký tự @
-         (at != 0) && //ký tự @ không nằm ở vị trí đầu
-         (dot != -1) && //có ký tự .
-         (dot > at + 1) && (dot < email.length - 1) //phải có ký tự nằm giữa @ và . cuối cùng
-         &&
-         (space == -1)) //không có khoẳng trắng 
-         {
-         //Email hợp lệ
-         return true;
-         } else {
-         //Email không hợp lệ
-         return false;
-         }
-    }
-}
-/************************************/
 var table,iMonth,iYear;
+//
 function initCalendar() {
     var calendar = document.getElementById("calendar");
+    var arrMonth = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+    var listDate = ["Sun","Mon","Tue","Web","Thu","Fri","Sat"];
     calendar.innerHTML = " ";
     table = document.createElement("TABLE");
     var mselect = document.createElement("SELECT");
     var yselect = document.createElement("SELECT");
     var tr = document.createElement("TR");
     table.setAttribute("id","table");
-    var arrMonth = ["January","February","March","April","May","June","July","August","September","October","November","December"];
-    var listDate = ["Sun","Mon","Tue","Web","Thu","Fri","Sat"];
+    
     tr.setAttribute("id","nav");
     iMonth = 0;
     iYear = 1950;
@@ -261,6 +189,82 @@ function initCalendar() {
         changeYear();
         newCalendar(table);
     }
+
+//test  user
+function testUser(){
+    userID = document.getElementById("user").value;
+    var long = userID.length;
+    if (userID == ""){
+        //user không được để trống
+        return false;
+    }else{
+        for( var i = 0;i<long+1;i++)
+        {
+            if(userID.charCodeAt(i)>57 && userID.charCodeAt(i)<65 || userID.charCodeAt(i)>90 && userID.charCodeAt(i)<97 || userID.charCodeAt(i)>122 || userID.charCodeAt(i)<48 ){
+                return false
+            }
+        }
+        if(long > 30){
+                    //user không quá 30 ký tự
+                    return false;
+                }else{
+                    //user hợp lệ
+                    return true;
+                }
+    }
+    
+}
+function resetForm() {
+        var listSpanNote = document.getElementsByClassName('text-note');
+        for(var i = 0; i < listSpanNote.length; i++) {
+            listSpanNote[i].innerHTML = '';
+        }
+    }
+function testPass(){
+    pass = document.getElementById("pass").value;
+    if (pass == ""){ 
+        return false;
+    }
+    return true;
+} 
+//test brithday
+function testBrDay(){
+    brDay = document.getElementsByClassName("txt-date")[0].value;
+    if (brDay == ""){
+        //Ngày sinh không được để trống
+        return false;
+    }
+    return true;
+}
+//Test input email
+function testEmail(){
+    email = document.getElementById("mail").value;
+    if (email == ""){
+        //Email không được để trống
+        return false;
+    }else{
+        var at = email.indexOf("@");
+         var dot = email.lastIndexOf(".");
+         var space = email.indexOf(" ");
+         
+         if ((at != -1) && //có ký tự @
+         (at != 0) && //ký tự @ không nằm ở vị trí đầu
+         (dot != -1) && //có ký tự .
+         (dot > at + 1) && (dot < email.length - 1) //phải có ký tự nằm giữa @ và . cuối cùng
+         &&
+         (space == -1)) //không có khoẳng trắng 
+         {
+         //Email hợp lệ
+         return true;
+         } else {
+         //Email không hợp lệ
+         return false;
+         }
+    }
+}
+/************************************/
+
+
     /*******************************************/
 function testForm() {
         if(testUser() == true) {

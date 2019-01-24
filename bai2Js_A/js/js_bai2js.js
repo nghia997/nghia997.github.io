@@ -1,15 +1,15 @@
 var table,iMonth,iYear;
 function initCalendar() {
     var calendar = document.getElementById("calendar");
+    var arrMonth = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+    var listDate = ["Sun","Mon","Tue","Web","Thu","Fri","Sat"];
+    tr.setAttribute("id","nav");
     calendar.innerHTML = " ";
     table = document.createElement("TABLE");
     var mselect = document.createElement("SELECT");
     var yselect = document.createElement("SELECT");
     var tr = document.createElement("TR");
     table.setAttribute("id","table");
-    var arrMonth = ["January","February","March","April","May","June","July","August","September","October","November","December"];
-    var listDate = ["Sun","Mon","Tue","Web","Thu","Fri","Sat"];
-    tr.setAttribute("id","nav");
     iMonth = 0;
     iYear = 1950;
     table.appendChild(tr);

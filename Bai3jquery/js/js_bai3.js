@@ -1,4 +1,4 @@
-var rotation = [1080,-720,-360,360,720,1080]; // value roatation
+var rotation = [1080,-720,-400,360,720,1080]; // value roatation
 var id = 1;
 // Randomly selected in 5 pictures
 function createLeaves(id) {
@@ -16,7 +16,7 @@ function RandomNumber(min , max) {
 } 
 setInterval(function(){
     var leaves = createLeaves(id++);
-    var time = RandomNumber(7,18);
+    var time = RandomNumber(7,15);
     var maxWidth = $(document).width();
     var x_start = RandomNumber(0,maxWidth);
     var x_end = RandomNumber(0,maxWidth);
@@ -26,7 +26,6 @@ setInterval(function(){
 
     },
     {
-       x: x_end,
        y: y_end,
        rotationX:rotation[RandomNumber(1,10)],
        rotationY:rotation[RandomNumber(0,5)],
@@ -34,4 +33,4 @@ setInterval(function(){
         removeLeaves(leaves);
        }
     });
-},700);
+},600);

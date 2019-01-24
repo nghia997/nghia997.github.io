@@ -4,6 +4,8 @@
 }
 .container {	
   	height: 600px; 
+  	overflow: hidden;
+  	background-color: #fff2de;
 }
 .img--left{
   	left: 0;
