@@ -1,42 +1,44 @@
 $(document).ready(function () {
     $(".content").hide();
-    var oldIndexClicked = "";
-    //when img click change img hover, this id slideup
-    $(".about").bind("click", function(){
-        var idClicked = "#" + $(this).attr("id");
-        $(idClicked).attr("src","images/" +$(this).attr("id")+ "_mb_hover.jpg");
-        $(this).next().slideToggle();
+    var Click = "";
+    //Change picture when clicked
+    $(".about").click( function(){
+        var Clicked = $(".about").index($(this)) + 1;
+        $(".about").eq(Clicked - 1).attr("src","images/about" + Clicked + "_mb_hover.jpg");
+         $(this).next().slideToggle();
         //close tagIndex old
-        if(oldIndexClicked != idClicked) {
-            var oldIndex = oldIndexClicked.substring(1,7);
-            $(oldIndexClicked).attr("src", "images/" +oldIndex+ "_mb.jpg");
-            $(oldIndexClicked).next().hide();
+        if(Click != Clicked && Click !="") {
+           $(".about").eq(Click - 1).attr("src", "images/about" + Click + "_mb.jpg");
+            $(".about").eq(Click - 1).next().hide();
         }
         //change Img when index equal
-        if(oldIndexClicked == idClicked) {
-            $(idClicked).attr("src", "images/" +$(this).attr("id")+ "_mb.jpg");
-            oldIndexClicked = "";
+        if(Click == Clicked) {
+            $(".about").eq(Clicked - 1).attr("src", "images/about" + Clicked + "_mb.jpg");
+            Click = "";
             return;
         }
-        timeOut(idClicked);
-    oldIndexClicked = idClicked;
+        timeOut(Clicked - 1);
+    Click = Clicked;
     });
-    aboutInfo();
+     aboutInfo();
 });
+//Close the others
+function timeOut(Clicked) {
+    setTimeout( function(){
+        $(".about").eq(Clicked).css({pointerEvents: "auto"})
+    }, 600);
+}
+
 //when click show info
 function aboutInfo() {
     $(".content__img").click(function () {
-        $(".about").css({pointerEvents: "none"})
-        $("#common__product").animate({top: "70px"});
+        $("#common__product").animate({top: "50px"});
+        $(".about").css({pointerEvents:""})
+        $("#common__product").show();
+        
     });
     $(".common__product__img--close").click(function () {
+        $("#common__product").hide();
         $("#common__product").animate({top: "-500px"});
-        $(".about").css({pointerEvents: "auto"})
-    });
-}
-//  when selecting another tag, there will be a bunch of open ones  
-function timeOut(idClicked) {
-    setTimeout( function(){
-    $(idClicked).css({pointerEvents: "auto"})
     });
 }
