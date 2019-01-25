@@ -1,0 +1,33 @@
+body {
+  height: 660px;
+  width: 1500px;
+}
+.container {
+  width: 100%;
+  height: 100%;
+  background-image: url(../images/tail.jpg);
+  position: relative;
+}
+.container img {
+  position: absolute;
+}
+#header-js {
+  top: 57px;
+  left: 17%;
+}
+#layer-1-js {
+  bottom: 42%;
+  left: 16%;
+}
+#layer-2-js {
+  top: 58px;
+  left: 19%;
+}
+#layer-3-js {
+  top: 57px;
+  left: 18%;
+}
+#layer-4-js {
+  top: 65px;
+  left: 19%;
+}

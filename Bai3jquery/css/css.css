@@ -1,13 +1,14 @@
-.img--right {
-  	right: 0;
-  	position: absolute;
+.container {
+  overflow: hidden;
+  width: 1300px;
+  height: 600px;
+  margin: auto;
+  background-image: url("../images/autumn_leaves1.png"), url("../images/autumn_leaves2.png");
+  background-repeat: no-repeat;
+  background-position: left top, right top;
+  background-color: #f5e1ac;
 }
-.container {	
-  	height: 600px; 
-  	overflow: hidden;
-  	background-color: #fff2de;
+.leaves {
+  position: relative;
+  margin-right: 50px;
 }
-.img--left{
-  	left: 0;
-  	position: absolute;
-}	

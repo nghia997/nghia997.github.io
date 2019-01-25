@@ -1,36 +1,24 @@
-var rotation = [1080,-720,-400,360,720,1080]; // value roatation
-var id = 1;
-// Randomly selected in 5 pictures
-function createLeaves(id) {
-  idleaves = RandomNumber(1,5);
-  var img =  $('<img />', {
-            id: 'leaves-'+ id +'-js',
-            // class: 'leaves--hidden-js',
-            src: 'images/leaves'+ idleaves +'.png',
-            alt: 'leaves1'
-            }).appendTo('.container');
-    return img;
-}
-function RandomNumber(min , max) {
-    return Math.floor(Math.random() * (max-min) + min );
-} 
-setInterval(function(){
-    var leaves = createLeaves(id++);
-    var time = RandomNumber(7,15);
-    var maxWidth = $(document).width();
-    var x_start = RandomNumber(0,maxWidth);
-    var x_end = RandomNumber(0,maxWidth);
-    var y_end = 700;
-   TweenMax.fromTo($(leaves), time, {
-          x: x_start
-
-    },
-    {
-       y: y_end,
-       rotationX:rotation[RandomNumber(1,10)],
-       rotationY:rotation[RandomNumber(0,5)],
-       onComplete: function () { // While complete animate
-        removeLeaves(leaves);
-       }
-    });
-},600);
+$(document).ready(function () {
+        var leaf = 5;
+        for( var i = 0; i <= 45; i++) {
+            // Random and add image
+            var randomImg = 1 + Math.floor(Math.random() * leaf);
+            var imgLeaf = "leaves" + randomImg;
+            var myImage = $('<img/>');
+            myImage.attr('class', "leaves");
+            myImage.attr('src',"images/" + imgLeaf + ".png");
+            $(".container").append(myImage);
+            animm($("img").eq(i));
+        }
+});
+// @class, animatetion this class
+function animm(myImage){
+    TweenMax.set(myImage,{attr:{class:'leaves'},x:Random(-1000,1000),y:Random(-180,-150),z:Random(-100,100)});
+    TweenMax.to(myImage,Random(6,15),{y:1000+100,ease:Linear.easeNone,repeat:-1,delay:-15});
+    TweenMax.to(myImage,Random(4,8),{x:'+=50',rotationZ:Random(0,180),repeat:-1,yoyo:true,ease:Sine.easeInOut});
+    TweenMax.to(myImage,Random(2,8),{rotationX:Random(0,360),rotationY:Random(0,360),repeat:-1,yoyo:true,ease:Sine.easeInOut,delay:-1});
+};
+//@value start, @value end, Random(start,end)
+function Random(start, end) {
+    return Math.random() * (end - start) + start;
+};

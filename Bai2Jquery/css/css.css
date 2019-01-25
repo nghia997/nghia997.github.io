@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding-top:6px;
+}
+.container {
+  position: relative;
+  margin: auto;
+  background-image: url("../images/bg_itm_lineup.jpg");
+  width: 950px;
+  height: 598px;
+}
+.container__left {
+  position: relative;
+  margin-left: 70px;
+  margin-top: 248px;
+}
+.container__right {
+  position: absolute;
+  margin-left: 720px;
+  margin-top: 248px;
+}
+.product {
+  top: 100px;
+  position: absolute;
+  width: 735px;
+  height: 335px;
+  left: 11%;
+  overflow: hidden;
+}
+.list-product {
+  position: absolute;
+  width: 4000px;
+}
+.list-product li {
+  display: inline-block;
+  padding-left: 50px;
+  padding-right: 50px;
+
+}
+.list-item-product {
+  position: absolute;
+  top: 450px;
+  left: 20%;
+}
+.list-item-product li {
+  display: inline-block;
+  margin-left: 15px;
+}
