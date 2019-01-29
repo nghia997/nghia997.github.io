@@ -1,3 +1,4 @@
+
 $(document).ready(function () {
     $(".content").hide();
     var Click = "";
@@ -18,7 +19,7 @@ $(document).ready(function () {
             return;
         }
         timeOut(Clicked - 1);
-    Click = Clicked;
+        Click = Clicked;
     });
      aboutInfo();
 });
@@ -31,14 +32,14 @@ function timeOut(Clicked) {
 
 //when click show info
 function aboutInfo() {
-    $(".content__img").click(function () {
-        $("#common__product").animate({top: "50px"});
-        $(".about").css({pointerEvents:""})
+        $(".content__img").click(function () {
+        $("#common__product").animate({top: "50px"});  
+        $(".about").css({pointerEvents:"none"});
         $("#common__product").show();
-        
     });
-    $(".common__product__img--close").click(function () {
+        $(".common__product__img--close").click(function () {
         $("#common__product").hide();
         $("#common__product").animate({top: "-500px"});
+        $(".about").css({pointerEvents: "auto"})
     });
-}
+}   

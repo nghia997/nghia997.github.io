@@ -1,6 +1,5 @@
-
 #wappter{
-  width:500px;
+  width:350px;
   margin:0 auto;
   padding-left:11px;
   padding-right:9px;
@@ -19,12 +18,12 @@ th ,td {
   width: 25px;
 }
 #value {
-  width: 250px;
+  width: 150px;
   height: 25px;
-  background-image: url(../images/calendar.png);
+  background-image: url(../images/Calendar.png);
   background-repeat: no-repeat;
   background-position: right;
-  margin: 10px 0px 15px;
+  margin: 0px 0px 15px;
 }
 #head {
   color: red;
@@ -61,7 +60,6 @@ th ,td {
   height: 100%
 }
 input{
-  margin-top:10px;
   width:150px;
   height:20px;
   float:left;

@@ -14,13 +14,7 @@ body{
   width: 267px;
   margin-left: 15px;
 }
-.content__title {
-  margin-top: 30px;
-  color: #a27c21;
-  font-size: 25px;
-  font-weight: bold;
-  text-align: center;
-}
+
 .content__detail {
   font-size: 16px;
   color: #a27c21;
@@ -35,7 +29,7 @@ body{
   margin-top: 15px;
   margin-bottom: 20px;
 }
-#common__product {
+#common__product,#common__product1 {
   margin-left: auto;
   margin-right: auto;
   position: absolute;

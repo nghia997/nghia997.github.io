@@ -1,15 +1,18 @@
+
 var table,iMonth,iYear;
+//
 function initCalendar() {
     var calendar = document.getElementById("calendar");
     var arrMonth = ["January","February","March","April","May","June","July","August","September","October","November","December"];
     var listDate = ["Sun","Mon","Tue","Web","Thu","Fri","Sat"];
-    tr.setAttribute("id","nav");
     calendar.innerHTML = " ";
     table = document.createElement("TABLE");
     var mselect = document.createElement("SELECT");
     var yselect = document.createElement("SELECT");
     var tr = document.createElement("TR");
     table.setAttribute("id","table");
+    
+    tr.setAttribute("id","nav");
     iMonth = 0;
     iYear = 1950;
     table.appendChild(tr);
@@ -22,26 +25,26 @@ function initCalendar() {
             th.setAttribute("onclick","backYear()");
             break;
           }
-          case 1: {
+            case 1: {
             th.setAttribute("id","back__Month-js");
             th.setAttribute("onclick","backMonth()");
             break;
           }
-          case 2: {
+            case 2: {
             th.setAttribute("colspan","2");
             th = createSelectMonth(th,mselect,arrMonth);
             break;
           }
-          case 3: {
+            case 3: {
             th = createSelectYear(th,yselect);
             break;
           }
-          case 4: {
+            case 4: {
             th.setAttribute("id","forward__Month-js");
             th.setAttribute("onclick","forwardMonth()");
             break;
           }
-          case 5: {
+            case 5: {
             th.setAttribute("id","forward__Year-js");
             th.setAttribute("onclick","forwardYear()");
             break;

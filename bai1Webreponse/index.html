@@ -1,0 +1,200 @@
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Bài 1 web responsive</title>
+        <link rel="stylesheet" type="text/css" href="css/css.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
+        <script language="javascript" src="js/script.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="header">
+                <picture>
+                    <source srcset="images/header-sp.png" media="(max-width: 640px)">
+                    <source srcset="images/header-pc.png" media="(max-width: 1280px)">
+                    <img src="images/header-pc.png" alt="header" style="wissdth:auto">
+                </picture>
+            </div>
+            <div class="content">
+                <div class="content__head">
+                    <img src="images/header-dow.png" alt="header">
+                </div>
+                <div class="content__body">
+                    <div class="content__body__head">
+                        <div class="checkbox">
+                            <label class="checkJP">日本語
+                                <input id = "check__JP-js" type="checkbox" checked="checked">
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="checkEN">English
+                                <input id = "check__EN-js" type="checkbox" checked="checked">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                        <img src="images/icon-voice-all.png" alt="voice-all">
+                    </div>
+                    <img class="sticker" src="images/sticker.png" alt="stiker">
+                    <div id = "women-1" class="women">
+                        <img src="images/icon-woman.png" class="icon-woman" alt="icon-woman">
+                        <div class="women__base">
+                            <div class="icon-sound"><img src="images/icon-sound.png" alt="icon-sound"></div>
+                            <div class="text">                      
+                                <p><b><span>エドワードさん</span> 、すみません。</b><br></p>
+                                <p class="dummy">dummy dummy dummy dummy dummy<span class="hidden"> dummy dummy dummy</span> </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id = "men-1" class="men">              
+                        <div class="men__base">
+                            <div class="icon-sound">
+                                <img src="images/icon-sound.png" alt="icon-sound">
+                            </div>
+                            <div class="text">                      
+                                <p><b>はい、<ruby>何<rt>なん</rt></ruby>ですか</b><br></p>
+                                <p class="dummy">dummy dummy dummy dummy  </p>
+                            </div>
+                        </div>
+                        <img src="images/icon-man.png" class="icon-man" alt="icon-man">
+                    </div>
+                    <div id = "women-2" class="women">
+                            <img src="images/icon-woman.png" class="icon-woman edit" alt="icon-woman">
+                            <div class="women__base">
+                                <div class="icon-sound">
+                                    <img src="images/icon-sound.png" alt="icon-sound">
+                                </div>
+                                <div class="text">                      
+                                    <p><b><ruby>今、<rt>いま</rt></ruby>日本まつりで<br><span>ヨサコイが おしえられる<ruby>人<rt>ひと</rt></ruby></span> をさがしてるんですが…。<br>おねがいできませんか。</b><br></p>
+                                    <p class="dummy">dummy dummy dummy dummy dummy dummy dummy dummy dummy </p>
+                                </div>
+                            </div>
+                    </div>
+                    <div class ="nav__chat" >
+                        <picture>
+                            <source srcset="images/pic-arow-sp.png" media="(max-width: 640px)">
+                            <source srcset="images/arow.png" media="(max-width: 1280px)">
+                            <img src="images/arow.png" alt="arow" style="width:auto">
+                        </picture>
+                        <div class="man">
+                            <img id = "man__smile" src = "images/pic-man-smile.png" alt="man-smile">
+                        </div>
+                        <div class="man">
+                            <img id = "man__sad" src= "images/pic-man-sad.png" alt = "man-sad">
+                        </div>
+                    </div>
+                    <div class="content__body--modify">
+                        <div class="chat__left">
+                        <div class="men --clear">               
+                            <div class="men__base">
+                                <div class="icon-sound">
+                                    <img src="images/icon-sound.png" alt="icon-sound">
+                                </div>
+                                <div class="text">
+                                    <p><b><span>ヨサコイ</span> ですか。いいですよ。</b><br></p>
+                                    <p class="dummy">dummy dummy dummy dummy  </p>
+                                </div>
+                            </div>
+                            <img src="images/icon-man.png" class="icon-man" alt="icon-man">
+                        </div>
+                        <div class="men">               
+                            <div class="men__base">
+                                <div class="icon-sound --hide">
+                                    <img src="images/icon-sound.png" alt="icon-sound">
+                                </div>
+                                <div class="text --margin">                     
+                                    <p><b><span>はじめて</span>ですが、やってみます。</b><br></p>
+                                    <p class = "dummy">dummy dummy dummy dummy  </p>
+                                </div>
+                            </div>
+                            <img src="images/icon-man.png" class="icon-man" alt="icon-man">
+                        </div>
+                        <div id = "women-3" class="women">
+                            <img src="images/icon-woman.png" class="icon-woman --edit" alt="icon-woman">
+                            <div class="women__base">
+                                <div class="icon-sound">
+                                    <img src="images/icon-sound.png" alt="icon-sound">
+                                </div>
+                                <div class="text">                      
+                                    <p><b>ありがとうございます。<br>よろしく おねがいします。</b><br></p>
+                                    <p class="dummy">dummy dummy dummy <span>dummy dummy dummy dummy dummy dummy</span> </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="men">               
+                            <div class="men__base">
+                                <div class="icon-sound --hide">
+                                    <img src="images/icon-sound.png" alt="icon-sound">
+                                </div>
+                                <div class="text --margin">                     
+                                    <p><b>こちらこそ。</b></p>
+                                    <p class = "dummy">dummy dummy dummy dummy  </p>
+                                </div>
+                            </div>
+                            <img src="images/icon-man.png" class="icon-man" alt="icon-man">
+                        </div>
+                        </div>
+                        <div class="chat__right">
+                        <div class="men">
+                            <div class="men__base men__base--large">
+                                <div class="icon-sound"><img src="images/icon-sound.png" alt="icon-sound"></div>
+                                <div class="text">
+                                    <p><b>じしん、ありません。<br>すみません</b><br></p>
+                                    <p class="dummy">dummy dummy dummy  dummy</p>
+                                </div>
+                                <div class="icon-sound"><img src="images/icon-sound.png" alt="icon-sound"></div>
+                                <div class="text --border">
+                                    <p><b>その <ruby>日<rt>ひ</rt></ruby>は つごうが わるいです。</b></p>
+                                    <p class="dummy">dummy dummy dummy  dummy</p>
+                                </div>
+                            </div> 
+                            <img src="images/icon-man.png" class="icon-man" alt="icon-man">
+                        </div>
+                        <div class="men">
+                                <div class="men__base">
+                                    <div class="icon-sound --hide">
+                                        <img src="images/icon-sound.png" alt="icon-sound">
+                                    </div>
+                                    <div class="text --margin">
+                                        <p><b>こちらこそ。</b><br></p>
+                                        <p class="dummy">dummy dummy dummy  dummy</p>
+                                    </div>
+                                </div>
+                                <img src="images/icon-man.png" class="icon-man" alt="icon-man">
+                        </div>
+                        <div class="women">
+                            <div class="women__base">
+                                    <div class="icon-sound">
+                                        <img src="images/icon-sound.png" alt="icon-sound">
+                                    </div>
+                                    <div class="text">
+                                        <p><b>そうですか。ざんねんです。</b></p>
+                                        <p class="dummy">dummy dummy dummy </p>
+                                    </div>
+                                </div>                  
+                             </div> 
+                        </div>
+                    </div>
+                    <div class="nav__footer">
+                        <picture>
+                            <source srcset="images/btn-pre-sp.png" media="(max-width: 640px)">
+                            <source srcset="images/btn-pre-pc.jpg" media="(max-width: 1280px)">
+                            <img src="images/btn-pre-sp.png" alt="btn-pre"style="width:auto">
+                        </picture>
+                        <picture>
+                            <source srcset="images/btn-pc.jpg" media="(max-width: 640px)">
+                            <source srcset="images/btn-sp.png" media="(max-width: 1280px)">
+                            <img src="images/btn-sp.png" alt="btn" style="width:auto">
+                        </picture>
+                        <picture>
+                            <source srcset="images/btn-next-sp.png" media="(max-width: 640px)">
+                            <source srcset="images/btn-next-pc.jpg" media="(max-width: 1280px)">
+                            <img src="images/btn-next-sp.png" alt="btn-next"style="width:auto">
+                        </picture>
+                    </div>
+                </div>
+            </div>
+            <div class="footer">
+                <img src="images/footer-pc.png" alt="footer">
+            </div>
+        </div>
+    </body>
+</html>

@@ -37,7 +37,6 @@ $(document).ready(function () {
     var timer;
     //loop ultil 3s change product
     timer = setInterval(moveRight,3000);
-    alert(setInterval());
     function slideShow() {
         clearInterval(timer);
         timer = setInterval(moveRight,3000);
